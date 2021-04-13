@@ -1,0 +1,122 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+%\usepackage[table]{xcolor}
+\usepackage{paralist} % compactitem etc
+\usepackage{booktabs} % For formal tables
+\usepackage{numprint}
+\usepackage{xspace}
+%\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage[normalem]{ulem}
+\usepackage{soul}
+\usepackage{multirow}
+\usepackage{dblfloatfix}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[noadjust]{cite}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[table,xcdraw]{xcolor}
+%\usepackage[noline,noend]{algorithm2e}
+\usepackage[noline]{algorithm2e}
+
+
+\input{macros.tex}
+
+\begin{document}
+\bstctlcite{IEEEexample:BSTcontrol}
+\title{DiffTrace: Efficient Whole-Program Trace Analysis and Diffing for Debugging
+}
+
+
+
+\author{\IEEEauthorblockN{Saeed Taheri}
+\IEEEauthorblockA{\textit{School of Computing} \\
+\textit{University of Utah}\\
+Salt Lake City, Utah, USA \\
+staheri@cs.utah.edu}
+\and
+\IEEEauthorblockN{Ian Briggs}
+\IEEEauthorblockA{\textit{School of Computing} \\
+\textit{University of Utah}\\
+Salt Lake City, Utah, USA \\
+ian.briggs@gmail.com}
+\and
+\IEEEauthorblockN{Martin Burtscher}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Texas State University}\\
+San Marcos, Texas, USA \\
+burtscher@txstate.edu}
+\and
+\IEEEauthorblockN{Ganesh Gopalakrishnan}
+\IEEEauthorblockA{\textit{School of Computing} \\
+\textit{University of Utah}\\
+Salt Lake City, Utah, USA \\
+ganesh@cs.utah.edu}
+}
+
+
+\IEEEoverridecommandlockouts
+\IEEEpubid{\makebox[\columnwidth]{978-1-7281-4734-5/19/\$31.00~\copyright2019 IEEE \hfill} \hspace{\columnsep}\makebox[\columnwidth]{ }}
+
+\maketitle
+
+\IEEEpubidadjcol
+
+\begin{abstract}
+\label{abs}
+\input{abstract.tex}
+\end{abstract}
+
+\begin{IEEEkeywords}
+Whole-program tracing, HPC debugging, trace diffing, nested loop recognition, formal concept analysis
+\end{IEEEkeywords}
+
+
+\section{Introduction}
+\label{sec:intro}
+\input{intro.tex}
+
+
+\section{DiffTrace Overview}
+\label{sec:overview}
+\input{overview.tex}
+
+\section{ Algorithms Underlying DiffTrace}
+\label{sec:algo}
+\input{algorithms.tex}
+
+\section{Case Study: ILCS}
+\label{sec:ilcs-case-study}
+\input{ilcs.tex}
+%\input{tabs/newResults.tex}
+
+\section{LULESH2 Examples}
+\label{sec:lulesh}
+\input{lulesh.tex}
+
+\section{Related Work}
+\label{sec:related}
+\input{relatedwork.tex}
+
+\section{Discussions \& Future Work}
+\label{sec:discussion}
+\input{discussion.tex}
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{bibs}
+
+
+%\appendix
+%\section{Additional Material}
+%\input{sup.tex}
+
+\end{document}
